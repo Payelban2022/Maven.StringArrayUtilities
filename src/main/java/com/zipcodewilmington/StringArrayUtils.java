@@ -108,19 +108,19 @@ public class StringArrayUtils {
      * @param array array of String objects
      * @return true if each letter in the alphabet has been used in the array
      */ // TODO
-    public static boolean isPangramic(String[] array) {
-
-        return false;
-    }
+//    public static boolean isPangramic(String[] array) {
+//
+//        return false;
+//    }
 
     /**
      * @param array array of String objects
      * @param value value to check array for
      * @return number of occurrences the specified `value` has occurred
      */ // TODO
-    public static int getNumberOfOccurrences(String[] array, String value) {
-        return 0;
-    }
+//    public static int getNumberOfOccurrences(String[] array, String value) {
+//        return 0;
+//    }
 
     /**
      * @param array         array of String objects
@@ -128,7 +128,19 @@ public class StringArrayUtils {
      * @return array with identical contents excluding values of `value`
      */ // TODO
     public static String[] removeValue(String[] array, String valueToRemove) {
-        return null;
+        int length = array.length-1;
+        String[] newArray = new String[length];
+        int j=0;
+        for (int i = 0; i < length+1; i ++){
+            if (array[i] != valueToRemove){
+                newArray[j]=array[i];
+                System.out.println(newArray[j]);
+                j++;
+
+            }
+
+        }
+        return newArray;
     }
 
     /**
